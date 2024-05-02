@@ -7,7 +7,7 @@
     <script src="scripts.js"></script>
     <title>Comunidade Games</title>
 </head>
-<body style="background-color: #f2f5f8;">
+<body >
     <header>
         <div class="menu-icon" onclick="toggleMenu()">
             &#9776; <!-- Ícone de menu -->
@@ -34,27 +34,9 @@
         
         <h3><b>Bem-vindo ao Portal de Notícias de Games!</b></h3>
 
-        <!-- SCRIPT ACIONADO AO CLICAR NO BOTÃO PARA MUDAR COR DE FUNDO-->
+        <!--AO CLICAR NO BOTÃO ABAIXO É ACIONADO O SCRIPT NO ARQUIVO "SCRIPTS.JS" PARA MUDAR COR DE FUNDO-->
 
         <button id="tema" onClick="toggleTheme()">Tema Escuro</button>
-            <script type='text/javascript'>
-            function toggleTheme() {
-                var element = document.body;
-                var currentBackgroundColor = element.style.backgroundColor;
-
-                // Muda para o tema padrão (claro)
-                if (currentBackgroundColor === 'black' || currentBackgroundColor === '#000000') {
-                element.style.backgroundColor = ''; // volta para a cor de fundo padrão do CSS
-                element.style.color = ''; // volta para a cor do texto padrão do CSS
-                document.getElementById('tema').innerText = 'Tema Escuro';
-                } else {
-                // Muda para o tema escuro
-                element.style.backgroundColor = 'black';
-                element.style.color = 'white';
-                document.getElementById('tema').innerText = 'Tema Claro';
-                }
-            }
-            </script>
 
 
         <section id="intro-msg">

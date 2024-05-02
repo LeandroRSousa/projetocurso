@@ -23,6 +23,7 @@ header {
 
 }
 
+
 .body-login {
     background-color: #bccedc;
     background-size: cover;
@@ -45,6 +46,18 @@ header {
     border-radius: 5px; 
     cursor: pointer; 
     text-decoration: none;
+    transition: all 0.1s ease-in-out;
+    z-index: 1000;
+}
+
+#tema:hover {
+    background-color: #8ea0ad;
+    color: #cbee77;
+    box-shadow:  
+      0 0 5px  #556672,
+      0 0 25px  #71828f,
+      0 0 50px  #8ea0ad,
+      0 0 150px  #adbecc;
 }
 
 h1 {

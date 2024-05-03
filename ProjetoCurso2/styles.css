@@ -19,12 +19,13 @@ body {
 }
 
 header {
-   background-color: #556672;
+    background-color: #556672;
 
 }
 
 
 .body-login {
+    background-image: url("https://th.bing.com/th/id/R.08d6ee17dae66c345bfdb608b620cbc3?rik=VVUaB0%2bfOKuCqw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fhUukl3e.jpg&ehk=YRfjpqCrlgojYQAWsoPUNyNdFEJa3UQ8E%2bHlxvv9%2b6E%3d&risl=&pid=ImgRaw&r=0");
     background-color: #bccedc;
     background-size: cover;
     background-position: center;
@@ -40,7 +41,7 @@ header {
     width: 100px;
     height: 40px;
     box-sizing: border-box;
-    background-color: #556672; 
+    background-color: #171a4a; 
     color: white; 
     border: none; 
     border-radius: 5px; 
@@ -51,7 +52,7 @@ header {
 }
 
 #tema:hover {
-    background-color: #8ea0ad;
+    background-color: #171a4a;
     color: #cbee77;
     box-shadow:  
       0 0 5px  #556672,
@@ -119,10 +120,9 @@ h4 {
 #destaque-msg {
     margin-top: 180px;
     margin-bottom: 50px;
-    box-shadow: 0px 4px 16px #96a5b0;
     text-align: center;
     color: #ffffff;
-    background-color: #556672;
+    background-color: rgb(23, 26, 74, 0.9);
     padding: 10px;
     margin-inline: 556px;
     text-shadow: 2px 3px 5px #96a5b0;
@@ -137,7 +137,7 @@ h4 {
     padding: 10px; 
     margin-top: 10px;
     box-sizing: border-box;
-    background-color: #556672; 
+    background-color: #171a4a; 
     color: white; 
     border: none; 
     border-radius: 5px; 
@@ -147,27 +147,20 @@ h4 {
 }
 
 .btn-cadastrar-home:hover {
-    background-color: #8ea0ad;
+    background-color: #171a4a;
     color: #cbee77;
-    box-shadow:  
-      0 0 5px  #556672,
-      0 0 25px  #71828f,
-      0 0 50px  #8ea0ad,
-      0 0 150px  #adbecc;
 }
 
 
 .controle-img {
     display: flex;
-    margin-left: 60%;
-    margin-top: -310px;
-    height: 380px;
-    width: 540px;
-    opacity: 0.8;
-    border-bottom: solid 5px #d7e2ea ;
-    border-right: solid 5px #d7e2ea;
-    border-radius: 210px;
-    max-width: 400px;
+    margin-left: 50%;
+    margin-top: -300px;
+    height: 580px;
+    width: 640px;
+    opacity: 0.9;
+ 
+    max-width: 700px;
 }
 
 .nav {
@@ -202,7 +195,7 @@ h4 {
 }
 
 .nav ul li a:hover {
-    color: #cbee77;
+    color: #171f8d;
     text-decoration: none;
     font-weight: bolder;
 }
@@ -246,6 +239,7 @@ h4 {
 }
 
 .banner {
+    background-image: url("imagens/imagens_curso/586e51559dc40f48cd8ce65af9c1522f.gif");
     position: relative;
     text-align: center;
     color: rgb(255, 255, 255, 0.8);
@@ -260,7 +254,7 @@ h4 {
     width: 100%;
     max-width: 600px;
     margin: auto;
-    background-color: rgba(5, 9, 26, 0.7);
+    background-color: rgba(5, 9, 26, 0.8);
     box-shadow: 0 2px 16px #717c84;
     color: rgb(231, 226, 226);
     text-align: center;
@@ -346,12 +340,12 @@ h4 {
 .container-destaque {
     flex: 0 1 calc(33.333% - 10px); /* Divide em 3 colunas com espaço entre elas */
     padding: 20px;
-    background-color: #cbee77 ;
-    box-shadow: 0 4px 16px #515f30;
-    border-radius: 10px;
+    background-color: rgb(23, 26, 74, 0.9) ;
+    box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
     position: relative;
-    color: rgb(0, 0, 0);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-shadow: 2px 4px 0px rgba(0, 0, 0, 0.1);
     transition: transform 0.4s;
     text-align: center;
     margin-top: 50px;
@@ -359,10 +353,12 @@ h4 {
     margin-inline: 5px;
     max-width: 600px;
     opacity: 0.9;
+   
 }
 
 .container-destaque:hover {
-    background-color: #7a8f47;
+    background-color: #2f2c79;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6);
     background-size:cover;
     background-position: center;
     flex: 0 1 calc(33.333% - 10px); /* Divide em 3 colunas com espaço entre elas */
@@ -370,7 +366,6 @@ h4 {
     padding: 20px;
     border-radius: 10px;
     position: relative;
-    color: rgb(255, 255, 255);
     transform: scale(1.1);
   }
 

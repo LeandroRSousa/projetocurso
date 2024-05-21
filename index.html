@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <title>Comunidade Games</title>
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776; <!-- Ícone de menu -->
+        </div>
+        <div class="close-icon" onclick="toggleMenu()" style="display: none;">
+            &#10006; <!-- Ícone de fechar -->
+        </div>
+             
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Painel</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
+                <li><a href="forum.html">Fórum</a></li>
+            </ul>
+        </nav>
+              
+        <nav></nav>
+    
+    </header>
+        <section class="banner">
+            <nav class="login-menu">
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                    
+                </ul>
+            </nav>
+            <img class="home-img" src="imagens/Design_an_image_or_logo_stylized_with_the_phrase.png" alt="logo">
+            <h2>Explore o Universo dos Games!</h2>
+
+            
+        </section>
+        
+        <h3><b>Bem-vindo ao Portal de Notícias de Games!</b></h3>
+
+        <!--AO CLICAR NO BOTÃO ABAIXO É ACIONADO O SCRIPT NO ARQUIVO "SCRIPTS.JS" PARA MUDAR COR DE FUNDO-->
+
+        <button id="tema" onClick="toggleTheme()">Tema Escuro</button>
+
+
+        <section id="intro-msg">
+            <p >Seja você um gamer casual ou um entusiasta hardcore, o nosso portal é o seu destino definitivo para todas as últimas novidades, análises detalhadas e discussões animadas sobre os jogos mais quentes do momento. Entre em um mundo de aventura, competição e diversão sem limites!<br> Faça seu cadastro e junte-se à Comunidade Gamer!</p>
+        </section>
+        <a href="cadastro.html" class="btn-cadastrar-home"><b>Cadastre-se</b></a>
+        <img class="controle-img" src="imagens/imagens_curso/channels4_profile2.png" alt="controle">
+
+      <h2 id="destaque-msg">Confira os jogos destaques do mês:</h2>
+
+
+   <div class="container-destaque-wrapper">
+        <div class="container-destaque">
+            <b><p>Resident Evil 4</p></b>
+            <cite>Situado seis anos após o incidente de Raccoon City, Resident Evil 4 traz Leon S. Kennedy de volta como protagonista. Escolhido para integrar uma equipe especial do governo, Leon parte em uma missão para resgatar a filha do presidente dos Estados Unidos, Ashley Graham, raptada por um grupo misterioso
+            </cite>
+        
+            <blockquote cite="#" class="bquote">
+                <br><p class="bquotep"color: rgba(28, 150, 250, 0.795);>"Clique na imagem para saber mais sobre o jogo!"</p>
+            
+            </blockquote>
+
+         
+
+           <!-- ADICIONADO AQUI O ONMOUSEROVER/OUT PARA MUDAR A IMAGEM AO PASSAR O CURSOR -->
+
+            <a href="https://pt.wikipedia.org/wiki/Resident_Evil_4"> 
+                <img src="https://th.bing.com/th/id/R.9e19e336622d012dc8e996690745c559?rik=zhxMJdTmBgbyXg&riu=http%3a%2f%2fimages1.fanpop.com%2fimages%2fimage_uploads%2fResident-Evil-4-resident-evil-894834_1280_1024.jpg&ehk=1CNlnYBNju0LP3IKvzRZE2nxcGPm9OUrqd0XrGzBJxE%3d&risl=&pid=ImgRaw&r=0" onmouseover="this.src='https://i.pinimg.com/736x/dc/fd/38/dcfd38e8006e2803113cb59304982eb4.jpg'" onmouseout="this.src='https://th.bing.com/th/id/R.9e19e336622d012dc8e996690745c559?rik=zhxMJdTmBgbyXg&riu=http%3a%2f%2fimages1.fanpop.com%2fimages%2fimage_uploads%2fResident-Evil-4-resident-evil-894834_1280_1024.jpg&ehk=1CNlnYBNju0LP3IKvzRZE2nxcGPm9OUrqd0XrGzBJxE%3d&risl=&pid=ImgRaw&r=0'" />
+            </a>
+        
+    </div>
+        <div class="container-destaque">
+            <b><p>Grand Theft Auto: San Andreas</p></b>
+            <cite>O jogo se passa no estado ficcional de San Andreas, com a história seguindo Carl "CJ" Johnson em sua luta para lidar com guerras de gangues, confrontos com policiais e as relações com sua família e amigos. O mundo aberto permite que os jogadores naveguem livremente pelas áreas rurais e urbanas de San Andreas.
+            </cite>
+        
+            <blockquote cite="#" class="bquote">
+                <br><p class="bquotep"color: rgba(28, 150, 250, 0.795);>"Clique na imagem para saber mais sobre o jogo!"</p>
+            </blockquote>
+
+            <!-- ADICIONADO AQUI O ONMOUSEROVER/OUT PARA MUDAR A IMAGEM AO PASSAR O CURSOR -->
+
+            <a href="https://pt.wikipedia.org/wiki/Grand_Theft_Auto:_San_Andreas" target="_blank">
+                <img src="https://3.bp.blogspot.com/-m3SMQwoheYc/Wzo0W4hnh1I/AAAAAAAAAz4/OCAgXlLgQxITz5HdM4KU2Lj-Gn-D5EmawCK4BGAYYCw/s640/gtasa-10.jpg" onmouseover="this.src='https://multiplayer.net-cdn.it/thumbs/images/2014/10/23/grandthefautosanandreas-1_do9CGxL_jpg_1400x0_q85.jpg'" onmouseout="this.src='https://3.bp.blogspot.com/-m3SMQwoheYc/Wzo0W4hnh1I/AAAAAAAAAz4/OCAgXlLgQxITz5HdM4KU2Lj-Gn-D5EmawCK4BGAYYCw/s640/gtasa-10.jpg'" />
+        </a>
+        </div>
+
+        <div class="container-destaque">
+            <b><p>God of War: Ghost of Sparta</p></b>
+            <cite>Ghost of Sparta conta a história da ascensão de Kratos como o Deus da Guerra, mostrando o que o espartano teve de fazer para provar seu mérito aos Deuses. Nesta jornada, detalhes como a origem dos mundos perdidos e diversas respostas para perguntas envolvendo a tatuagem, a família e cicatriz de Kratos serão reveladas.
+            </cite>
+        
+            <blockquote cite="#" class="bquote">
+                <br><p class="bquotep"color: rgba(28, 150, 250, 0.795);>"Clique na imagem para saber mais sobre o jogo!"</p>
+            </blockquote>
+
+            <!-- ADICIONADO AQUI O ONMOUSEROVER/OUT PARA MUDAR A IMAGEM AO PASSAR O CURSOR -->
+
+            <a href="https://pt.wikipedia.org/wiki/God_of_War:_Ghost_of_Sparta" target="_blank">
+                <img src="https://www.giantbomb.com/a/uploads/square_small/8/87790/1794101-box_gowgos.png" onmouseover="this.src='https://w0.peakpx.com/wallpaper/417/215/HD-wallpaper-god-of-war-concept-god-of-war-kratos-playstation-santa-monica-sony-thumbnail.jpg'" onmouseout="this.src='https://www.giantbomb.com/a/uploads/square_small/8/87790/1794101-box_gowgos.png'" />
+        </a>
+        </div>
+    </div> 
+    <div class="whatsapp-btn">
+        <a href="https://api.whatsapp.com/send?phone=#" target="_blank">
+          <img src="Imagens/whatsapp.jpg" alt="WhatsApp">
+          <span class="tooltip">Precisa de ajuda?</span>
+        </a>
+    </div>
+    <footer>
+        &copy; OS DEVS: LEANDRO RIBEIRO DE SOUSA, LUIZA MARIA BOIKO COUTINHO, DOUGLAS MACHADO, RODRIGO PEREIRA DOS SANTOS, STELLA PIRES DE OLIVEIRA, SAMUEL AVILA CARVALHO, MARIA EDUARDA DA SILVA E SILVA. Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>

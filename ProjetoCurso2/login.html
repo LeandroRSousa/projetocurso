@@ -20,8 +20,12 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="login.html">Painel</a></li>
-                <li><a href="comunidade.html">Comunidade</a></li>
-                <li><a href="jogos.html">Jogos</a></li>
+                <li><a href="/testes/ver_publicacoes.php">Fórum</a></li>
+                <li><a href="comunidade.html">Pesquisa</a></li>
+                <li id="search-container">
+                    <input type="text" id="search" placeholder="Pesquisar...">
+                    <button id="search-button" onclick="performSearch()">🔍</button>
+                <li>
             </ul>
         </nav>
         
@@ -31,11 +35,13 @@
     <main class="form-login">
         <img class="login-img" src="imagens/Design_an_image_or_logo_stylized_with_the_phrase.png" alt="logo">
         <legend><b>Faça login em sua conta</b></legend>
-        <form action="#" method="post">
-            <label for="nome"><b>Email:</b></label>
-            <input type="text" placeholder="Digite seu e-mail" id="nome" required>
+        <form action="/testes/login.php" method="POST">
+            <label for="email"><b>Email:</b></label>
+            <input type="text" placeholder="Digite seu e-mail" id="email" name="email" required><br>
+    
             <label for="senha"><b>Senha:</b></label>
-            <input type="password" placeholder="Digite sua senha" id="senha" required>
+            <input type="password" placeholder="Digite sua senha" id="senha" name="senha" required><br>
+    
             <button type="submit"><b>Login</b></button>
         </form>
         <a href="cadastro.html">Recuperar senha</a>

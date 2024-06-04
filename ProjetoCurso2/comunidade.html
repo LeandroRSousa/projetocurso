@@ -20,17 +20,26 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="login.html">Painel</a></li>
-                <li><a href="comunidade.html">Comunidade</a></li>
-                <li><a href="jogos.html">Jogos</a></li>
+                <li><a href="/testes/ver_publicacoes.php">Fórum</a></li>
+                <li><a href="comunidade.html">Pesquisa</a></li>
+                <li id="search-container">
+                    <input type="text" id="search" placeholder="Pesquisar...">
+                    <button id="search-button" onclick="performSearch()">🔍</button>
+                <li>
             </ul>
         </nav>
-        
     </header>
     <section class="banner">
+        <nav class="login-menu">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+                
+            </ul>
+        </nav>
         <img class="home-img" src="imagens/Design_an_image_or_logo_stylized_with_the_phrase.png" alt="logo">
         <h2>Participe da Comunidade</h2>
     </section>
-
     <button id="tema" onClick="toggleTheme()">Tema Escuro</button>
 
     <h4><b>Contamos com você!</b></h4>

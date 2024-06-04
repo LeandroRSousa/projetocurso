@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
-    <title>Comunidade Games</title>
-</head>
-<body style="background-color: #f2f5f8;">
-    <header>
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="login.html">Painel</a></li>
-                <li><a href="comunidade.html">Comunidade</a></li>
-                <li><a href="jogos.html">Jogos</a></li>
-            </ul>
-        </nav>
-        <img class="logo-img" src="imagens/Design_an_image_or_logo_stylized_with_the_phrase.png" alt="logo"> 
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+        <title>Comunidade Games</title>
+    </head>
+    <body style="background-color: #f2f5f8;">
+        <header>
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776; <!-- Ícone de menu -->
+            </div>
+            <div class="close-icon" onclick="toggleMenu()" style="display: none;">
+                &#10006; <!-- Ícone de fechar -->
+            </div>
+                 
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Painel</a></li>
+                    <li><a href="/testes/ver_publicacoes.php">Fórum</a></li>
+                    <li><a href="comunidade.html">Pesquisa</a></li>
+                    <li id="search-container">
+                        <input type="text" id="search" placeholder="Pesquisar...">
+                        <button id="search-button" onclick="performSearch()">🔍</button>
+                    <li>
+                </ul>
+            </nav>
+            
+        
+        </header>
+        <section class="banner">
+            <img class="home-img" src="imagens/Design_an_image_or_logo_stylized_with_the_phrase.png" alt="logo">
+            <h2>Faça seu cadastro</h2>
+        </section>
+
+    <div class="form-cadastro">
+        <form method="POST" action="/testes/cadastro.php">
+            <label>Nome:</label><input type="text" name="nome" id="login"><br>
+            <label>E-mail:</label><input type="text" name="email" id="login"><br>
+            <label>Senha:</label><input type="password" name="senha" id="senha"><br>
+            <label>Confirmar Senha:</label><input type="password" name="confirmar_senha" id="senha"><br>
+            <button type="submit" value="Cadastrar" id="cadastrar" name="cadastrar">Cadastrar</button>
+        </form>
+    </div>
 
     <div class="whatsapp-btn">
         <a href="https://api.whatsapp.com/send?phone=SEUNUMEROAQUI" target="_blank">
